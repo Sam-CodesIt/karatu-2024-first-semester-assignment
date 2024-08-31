@@ -4,16 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table showing AltSchool Africa Schools and Courses</title>
-    <link rel="stylesheet" href="./Styles/table.css" />
+    <link rel="stylesheet" href="./Styles/new.css" />
   </head>
 
   <body>
-    <header id="top">
-      <h1>🏫 AltSchool Africa Programs</h1>
-      <p>Empowering the next generation of tech leaders</p>
+    <header>
+      <h1>AltSchool Africa Programs</h1>
     </header>
 
-    <!-- Global Navigation -->
     <nav>
       <ul>
         <li><a href="./index.html">Home</a></li>
@@ -23,41 +21,64 @@
       </ul>
     </nav>
 
-    <main class="container">
-      <section class="school">
-        <h2 class="school-header">🛠️ School of Engineering</h2>
-        <div class="courses">
-          <div class="course">Frontend Engineering</div>
-          <div class="course">Backend Engineering</div>
-          <div class="course">Cloud Engineering</div>
-          <div class="course">Cybersecurity</div>
-        </div>
-      </section>
-
-      <section class="school">
-        <h2 class="school-header">🎨 School of Product</h2>
-        <div class="courses">
-          <div class="course">Product Design</div>
-          <div class="course">Product Marketing</div>
-          <div class="course">Product Management</div>
-        </div>
-      </section>
-
-      <section class="school">
-        <h2 class="school-header">📊 School of Data</h2>
-        <div class="courses">
-          <div class="course">Data Analysis</div>
-          <div class="course">Data Science</div>
-          <div class="course">Data Engineering</div>
-        </div>
-      </section>
+    <main>
+      <table>
+        <caption class="sr-only">
+          AltSchool Africa Schools and Courses
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">School</th>
+            <th scope="col">Courses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+              <span class="emoji" role="img" aria-label="Engineering">🛠️</span>
+              School of Engineering
+            </th>
+            <td>
+              <ul>
+                <li>Frontend Engineering</li>
+                <li>Backend Engineering</li>
+                <li>Cloud Engineering</li>
+                <li>Cybersecurity</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <span class="emoji" role="img" aria-label="Product">💼</span>
+              School of Product
+            </th>
+            <td>
+              <ul>
+                <li>Product Design</li>
+                <li>Product Marketing</li>
+                <li>Product Management</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <span class="emoji" role="img" aria-label="Data">📊</span>
+              School of Data
+            </th>
+            <td>
+              <ul>
+                <li>Data Analysis</li>
+                <li>Data Science</li>
+                <li>Data Engineering</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </main>
 
     <footer>
       <p>&copy; 2024 AltSchool Africa. All rights reserved.</p>
     </footer>
-
-    <!-- Scrolling to top -->
-    <a href="#top" class="scroll-top" aria-label="Scroll to top">↑ Top</a>
   </body>
 </html>
