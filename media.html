@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Representation of a Frontend Engineering Student</title>
+    <link rel="stylesheet" href="./Styles/media.css" />
+  </head>
+
+  <body>
+    <!-- Global Navigation -->
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./form.html">Form</a></li>
+            <li><a href="./table.html">Table</a></li>
+            <li><a href="./media.html">Media</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="home">
+        <h1>Frontend Engineering: A Student's Journey 🚀</h1>
+        <p>
+          Embarking on an exciting 12-month adventure in the world of frontend
+          engineering! Discover the challenges and triumphs of an AltSchool
+          Africa Engineering student. 💻🎓
+        </p>
+      </section>
+
+      <section id="student-showcase">
+        <h2>A Day in the Life 👩‍💻</h2>
+
+        <!-- Art-direction Responsive image with picture element -->
+        <picture>
+          <source srcset="./Images/Laptop.jpg" media="(min-width: 1024px)" />
+          <source srcset="./Images/Tablet.jpg" media="(min-width: 768px)" />
+          <source srcset="./Images/Mobile.jpg" media="(min-width: 480px)" />
+          <img
+            src="./Images/Fallback.jpg"
+            alt="Frontend engineering student collaborating with classmates"
+          />
+        </picture>
+      </section>
+
+      <section id="media">
+        <h2>Multimedia Learning Experience 🎨</h2>
+        <div class="media-grid">
+          <div>
+            <h3>Coding Workshop Video 🎥</h3>
+            <video controls>
+              <source src="./Video/javascriptworkshop.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div>
+            <h3>Tech Talks Podcast 🎙️</h3>
+            <audio controls>
+              <source
+                src="./Audio/Youngprofessionalsintech.mp3"
+                type="audio/mp3"
+              />
+            </audio>
+          </div>
+          <div>
+            <h3>Virtual Campus Tour 🏫</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61927591.040140085!2d-29.29904768312972!3d-18.674754010908707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4119de407e7f3b2d%3A0x83eae7d809fcb7bf!2sAltschool%20Africa!5e0!3m2!1sen!2sng!4v1725010477323!5m2!1sen!2sng"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 AltSchool Africa Frontend Engineering Program. Empowering
+          future web developers! 🌟
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scrolling to top -->
+    <a href="#top" class="scroll-top" aria-label="Scroll to top">↑ Top</a>
+  </body>
+</html>
